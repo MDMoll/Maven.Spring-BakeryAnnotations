@@ -5,6 +5,8 @@ import com.zipcodewilmington.bakery.services.MuffinService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
+import javax.persistence.Entity;
+
 public class MuffinController {
     private MuffinService service;
 

@@ -5,6 +5,9 @@ import com.zipcodewilmington.bakery.services.BakerService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
+import javax.persistence.Entity;
+
+@Entity
 public class BakerController {
     private BakerService service;
 
