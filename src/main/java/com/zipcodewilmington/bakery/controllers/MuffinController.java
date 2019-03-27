@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.persistence.Entity;
@@ -42,7 +43,7 @@ public class MuffinController {
         return new ResponseEntity<>(service.update(id, baker), HttpStatus.OK);
     }
     
-    @RequestMapping
+    @DeleteMapping
     public ResponseEntity<Boolean> destroy(Long id) {
         return new ResponseEntity<>(service.delete(id), HttpStatus.OK);
     }
